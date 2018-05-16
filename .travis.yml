@@ -13,8 +13,6 @@ script:
         - echo "finished test_waldisk"
         - docker run -it amadeuschan/osproject /bin/sh -c "git clone https://github.com/AmadeusChan/OS2018spring-projects-g10.git; cd OS2018spring-projects-g10/yggdrasil; make; python test_xv6inode.py"
         - echo "finished test_xv6inode"
-        - docker run -it amadeuschan/osproject /bin/sh -c "git clone https://github.com/AmadeusChan/OS2018spring-projects-g10.git; cd OS2018spring-projects-g10/yggdrasil; make; python test_dirspec.py"
-        - echo "finished test_dirspec"
         - docker run -it amadeuschan/osproject /bin/sh -c "git clone https://github.com/AmadeusChan/OS2018spring-projects-g10.git; cd OS2018spring-projects-g10/yggdrasil; make; python test_bitmap.py"
         - echo "finished test_bitmap"
         - docker run -it amadeuschan/osproject /bin/sh -c "git clone https://github.com/AmadeusChan/OS2018spring-projects-g10.git; cd OS2018spring-projects-g10/yggdrasil; make; python test_inodepack.py"
